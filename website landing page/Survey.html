@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Georgian College Auto Show</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      .logo-img {
+        width: 120px;
+        height: 70px;
+      }
+
+      footer{
+        background-color: #004b81;
+        color: white;
+        padding: 20px;
+        padding-bottom: 3%;
+        padding-top: 3%;
+
+      }
+
+      .home{
+        color: white;
+        text-decoration: none;
+      }
+
+      .btn {
+        width: 200px;
+        height: 35px;
+        background-color: #004b81;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 25%;
+        margin-top: 0px;
+        line-height: 10px;
+      }
+
+      .word {
+        text-align: center;
+        color: white;
+      }
+      .word2 {
+        color: #004b81;
+      }
+
+      .banner {
+        width: 100%;
+        
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url(assets/Georgian\ college.jpeg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        margin-top: 0%;
+      }
+
+      .card {
+        background-color: white;
+      }
+    </style>
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="assets/OneDrive_1_2023-03-21/AutoShow_Logo_Black.png"
+              class="img-fluid logo-img"
+              alt="Autoshow Logo"
+          /></a>
+
+          <!-- Toggle button for small screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation links -->
+          <div>
+            <ul class="nav justify-content-end mb-1">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About Us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Exhibition.html">Exhibition</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Survey.html">Survey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact Us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="banner mt-0 me-5 mb-0">
+        <br />
+        <h2 class="word mt-3">Share Your Experience with Us</h2>
+        <br />
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4 shadow-lg p-5 ms-3 mt-1 card rounded">
+            <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" not required>
+                </div>
+                <div class="mb-3">
+                  <label for="car-type" class="form-label">What type of car do you own?</label>
+                  <select class="form-select" id="car-type" required>
+                    <option selected disabled>Choose one...</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="sports">Sports Car</option>
+                    <option value="truck">Truck</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="attend-event" class="form-label">Do you plan on attending the event this year?</label>
+                  <div class="form-check" required>
+                    <input class="form-check-input" type="radio" name="attend-event" id="yes-attend" value="yes">
+                    <label class="form-check-label" for="yes-attend">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="attend-event" id="no-attend" value="no">
+                    <label class="form-check-label" for="no-attend">
+                      No
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="reason-for-attending" class="form-label">If you are attending, what is your main reason for attending?</label>
+                  <div class="form-check"required>
+                    <input class="form-check-input" type="radio" name="reason-for-attending" id="see-new-cars" value="see-new-cars">
+                    <label class="form-check-label" for="see-new-cars">
+                      To see new cars
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="reason-for-attending" id="meet-people" value="meet-people">
+                    <label class="form-check-label" for="meet-people">
+                        To meet other car enthusiasts
+                      </label>
+                    </div>
+                    <div class="form-check" required>
+                      <input class="form-check-input" type="radio" name="reason-for-attending" id="participate-activities" value="participate-activities">
+                      <label class="form-check-label" for="participate-activities">
+                        To participate in activities
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="reason-for-attending" id="other-reason" value="other">
+                      <label class="form-check-label" for="other-reason">
+                        Other (please specify)
+                      </label>
+                      <input type="text" class="form-control mt-2" id="other-reason-text" placeholder="Please specify">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="comments" class="form-label">Do you have any comments or suggestions for the event organizers?</label>
+                    <textarea class="form-control" id="comments" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                
+          </div>
+          <div class="col-sm-4"></div>
+          <br> <br>
+        </div>
+      </div>
+        <footer class="footer text-white">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 ms-0 footer">
+                    
+                    <a href="index.html" class="home">Home</a> | <a href="About Us.html" class="home">About Us</a> | <a href="Exhibition.html" class="home">Exhibition</a> |
+            <a href="Events.html" class="home">Events</a> |
+            
+            <a href="Survey.html" class="home">Survey</a> |
+            <a href="Contact Us.html" class="home">Contact Us</a>
+                
+                </div>
+
+                <div class="col-md-2 mb-3 me-0">
+                    <img src="assets/OneDrive_1_2023-03-21/AutoShow_Logo_White.png" class="img-fluid img" alt="Autoshow">
+
+                </div>
+            </div>
+            </div>
+        </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

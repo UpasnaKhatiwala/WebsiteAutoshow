@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Georgian College Auto Show</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      .logo-img {
+        width: 120px;
+        height: 70px;
+      }
+      .img{
+        width: 150px;
+        height: 55px;
+      }
+      .nav-link {
+        color: #004b81;
+      }
+      .carousel-item {
+        height: 50vh;
+        min-height: 50px;
+        background-color: #777;
+        color: #fff;
+        overflow: hidden;
+      }
+
+      .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+
+      .caption {
+        text-align: center;
+        font-weight: bolder;
+        color: #004b81;
+      }
+
+      .Directors {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        color: #004b81;
+      }
+
+      .directormsg {
+        text-align: justify;
+      }
+
+      .stdir {
+        width: 170px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .designation {
+        size: small;
+      }
+      .row {
+        margin-left: 10%;
+        margin-top: 2%;
+        
+      }
+
+      .word{
+        font-style: italic;
+        font-size: 60px;
+        text-align: center;
+        margin-top: 25%;
+        margin-left: 15%;
+        margin-bottom: 25%;
+        margin-right: 15%;
+        color: #51830e;
+      }
+
+      .word1{
+        font-style: italic;
+        font-size: 60px;
+        text-align: center;
+        margin-top: 25%;
+        margin-left: 15%;
+        margin-bottom: 25%;
+        margin-right: 15%;
+        color: #002649;
+      }
+      .word2{
+        font-style: italic;
+        font-size: 35px;
+        text-align: center;
+        margin-top: 60%;
+        margin-bottom: 50%;
+        margin-right: 15%;
+        color: #333f48;
+      }
+
+      .card{
+        
+        background: linear-gradient(to bottom right, #004b81, #51830e);
+      color:#fff
+      }
+
+      .card2{
+        
+        background: linear-gradient(to bottom right, #002649 50%, #77c5d5);
+      color:#fff
+      }
+
+      .card3{
+        
+        background: linear-gradient(to bottom right, #333f48 25%, #f3d03e);
+      color:#fff
+      }
+
+      footer{
+        background-color: #004b81;
+        color: white;
+        padding: 20px;
+        padding-bottom: 3%;
+        padding-top: 3%;
+
+      }
+
+      .home{
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+   
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="assets/OneDrive_1_2023-03-21/AutoShow_Logo_Black.png"
+              class="img-fluid logo-img"
+              alt="Autoshow Logo"
+          /></a>
+
+          <!-- Toggle button for small screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation links -->
+          <div>
+            <ul class="nav justify-content-end mb-1">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About Us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Exhibition.html">Exhibition</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Survey.html">Survey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact Us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="assets/Slider/Slider2.png"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="assets/Slider/Slider3.png"
+            alt="Second slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="assets/Slider/Slide1.jpg"
+            alt="Third slide"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-md container-fluid Directors">
+        <h1>Event Schedules</h1>
+      </div>
+      <div class="container-md container-fluid">
+        <div class="row">
+          <div class="col-sm-3 shadow-lg p-5 mb-1 ms-3 bg-body-tertiary  rounded card">
+              <br>
+            <h3>Vendor Village</h3>
+            <p>Date: June 2nd, June 3rd and June 4th, 2023</p>
+            <p>Time: All Day</p>
+            <p>Location: Parking Lot D</p>
+            
+          </div>
+          <div class="col-sm-3 shadow p-5 mb-1 ms-3 bg-body-tertiary rounded card">
+              <h3>Let's Go Camping Subaru Activity</h3>
+              <p>Date: June 2nd, June 3rd and June 4th, 2023</p>
+              <p>Time: All Day</p>
+              <p>Location: Fun Field</p>
+          </div>
+          <div class="col-sm-3 p-3 mb-1 ms-3"><p class="word">All Weekend</p></div>
+      </div>
+      </div>
+      <div class="container-md container-fluid">
+          <div class="row" >
+              <div  class="col-sm-2 shadow p-3 mb-1 ms-3 bg-body-tertiary rounded card3">
+                  <h3>Alumini Appreciation</h3>
+                  <p>Date: June 3rd</p>
+                  <p>Time: 10:00 AM</p>
+                  <p>Location: Main Stage</p>
+              </div>
+              <div  class="col-sm-2 shadow p-3 mb-1 ms-5 bg-body-tertiary rounded card3 ">
+                  <h3>Pfaff Track</h3>
+                  <p>Date: June 3rd & June 4th</p>
+                  <p>Time: 10:00 AM to 5:00 PM</p>
+                  <p>Location: Parking Lot E/H</p>
+              </div>
+  
+              <div  class="col-sm-2 shadow p-3 mb-1 ms-5 bg-body-tertiary rounded card3">
+                  <h3>Kid Zone Activity</h3>
+                  <p>Date: June 3rd & June 4th</p>
+                  <p>Time: All Day</p>
+                  <p>Location: Fun Field</p>
+              </div>
+      
+          <div class="col-sm-2 shadow p-3 mb-1 ms-5 bg-body-tertiary rounded card3">
+            <h3>Bentley The Bulldog</h3>
+            <p>Date: June 3rd & June 4th</p>
+            <p>Time: 10:00 AM to 5:00 PM</p>
+            <p>Location: Throughtout Show</p>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-4 ">
+                  <div class="row-sm-0.5 mt-3 shadow-lg p-3 mb-1 bg-body-tertiary rounded card3">
+                <h3>Red Barn Canine Performances</h3>
+                <p>Date: June 3rd and June 4th, 2023</p>
+                <p>Time: 11:00 AM, 1:30 PM & 4:00 PM</p>
+                <p>Location: Fun Field</p>
+                </div>
+                <div class="row-sm-0.5 mt-3 shadow-lg p-3 mb-1 bg-body-tertiary rounded card3">
+                  
+                    <h3>Batman & Batmobile</h3>
+                    <p>Date: June 3rd and June 4th, 2023</p>
+                    <p>Time: All Day</p>
+                    <p>Location: Parking Lot E/H</p>
+                    
+                </div>
+              </div>
+              
+              <div class="col-sm-2 p-3 mt-3 mb-1 ms-5 "><p class="word2">Saturday & Sunday Features</p></div>
+              <div class="col-sm-3 shadow-lg p-3 mb-1 me-0 mt-3 ms-3 bg-body-tertiary rounded card3"><br><br><br><br>
+                  <h3>Automotive Fire Extrication Demonstration</h3>
+                    <p>Date: June 3rd and June 4th, 2023</p>
+                    <p>Time: Saturday 11:00 AM <br> Sunday 1:30 PM</p>
+                    <p>Location: Fun Field</p>
+              </div>
+              
+          </div>
+      
+      <div class="row" >
+          <div  class="col-sm-2 shadow p-4 mb-1 ms-3 bg-body-tertiary rounded card3">
+              <h3>Yamaha Mini Bikes</h3>
+              <p>Date: June 3rd & June 4th</p>
+              <p>Time: All Day</p>
+              <p>Location: Fun Field</p>
+          </div>
+          <div  class="col-sm-2 shadow p-3 mb-1 ms-5 bg-body-tertiary rounded card3">
+              <h3>LEGO Display</h3>
+              <p>Date: June 3rd & June 4th</p>
+              <p>Time: All Day</p>
+              <p>Location: N Building</p>
+          </div>
+  
+          <div  class="col-sm-2 shadow p-3 mb-1 ms-5 bg-body-tertiary rounded card3">
+              <h3>K.I.T.T. (Knight Rider car)</h3>
+              <p>Date: June 3rd & June 4th</p>
+              <p>Time: 10:00 AM to 5:00 PM</p>
+              <p>Location: N Building</p>
+          </div>
+  
+      <div class="col-sm-2 shadow p-3 mb-1 ms-5 bg-body-tertiary rounded card3">
+        <h3>Electric Vehicle Test Drives</h3>
+        <p>Date: June 3rd & June 4th</p>
+        <p>Time: 10:00 AM to 5:00 PM</p>
+        <p>Location: Charging Station (Near Parking Lot A)</p>
+        </div>
+      </div>
+  </div>
+  </div>
+      
+      <div class="container-md container-fluid">
+        <div class="row" >
+            <div  class="col-sm-2 shadow p-3 mb-1 ms-3 bg-body-tertiary rounded card2">
+                <h3>Opening Ceremony</h3>
+                <p>Date: June 2nd</p>
+                <p>Time: 11:00 AM</p>
+                <p>Location: Main Stage</p>
+            </div>
+            <div  class="col-sm-2 shadow p-3 mb-1 ms-5 bg-body-tertiary rounded card2">
+                <h3>Show n' Shine - Student Division</h3>
+                <p>Date: June 2nd</p>
+                <p>Time: 12:00 PM<br> (Trophy Ceremony - 3:30 PM</p>
+                <p>Location: Parking Lot A</p>
+            </div>
+
+            <div  class="col-sm-2 shadow p-3 mb-1 ms-5 bg-body-tertiary rounded card2">
+                <h3>Cars and Jobs Student Panel</h3>
+                <p>Date: June 2nd</p>
+                <p>Time: 1:00 PM</p>
+                <p>Location: Main Stage</p>
+            </div>
+    
+        <div class="col-sm-2 shadow p-3 mb-1 ms-5 bg-body-tertiary rounded card2">
+          <h3>CFB Borden Military Vehicle</h3>
+          <p>Date: June 3rd</p>
+          <p>Time: 10:00 AM to 6:00 PM</p>
+          <p>Location: Fun Field</p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 ms-3">
+                <p class="word1">Daily Features</p>
+            </div>
+            <div class="col-sm-3 shadow p-3 mt-0 mb-3 ms-5 bg-body-tertiary rounded card2">
+                <h3>Show 'n Shine - Tuner Division</h3>
+                <p>Date: June 3rd</p>
+                <p>Time: 12:00 PM <br> Trophy Ceremony: 3:30 PM</p>
+                <p>Location: Parking Lot A</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-3 shadow p-3 mb-1 ms-3 bg-body-tertiary  rounded card2">
+                <br>
+              <h3>Live Auction</h3>
+              <p>Date: June 3rd 2023</p>
+              <p>Time: 1:00 PM</p>
+              <p>Location: Main Stage</p>
+              
+            </div>
+            <div class="col-sm-3 shadow p-5 mb-1 ms-4 bg-body-tertiary rounded card2">
+                <h3>Show 'n Shine - Classic & Bike Division</h3>
+                <p>Date: June 4th 2023</p>
+                <p>Time: 12:00 PM <br> Trophy Ceremony: 3:30 PM</p>
+                <p>Location: Parking Lot A</p>
+            </div>
+            <div class="col-sm-3 shadow p-3 mb-1 ms-4 bg-body-tertiary rounded card2"><br>
+                <h3>RedBull</h3>
+                <p>Date: June 4th 2023</p>
+                <p>Time: 10:00 AM to 5:00 PM</p>
+                <p>Location: Parking Lot E/H</p>
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <footer class="footer text-white">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 ms-0 footer">
+                    
+                    <a href="index.html" class="home">Home</a> | <a href="About Us.html" class="home">About Us</a> | <a href="Exhibition.html" class="home">Exhibition</a> |
+            <a href="Events.html" class="home">Events</a> |
+            
+            <a href="Survey.html" class="home">Survey</a> |
+            <a href="Contact Us.html" class="home">Contact Us</a>
+                
+                </div>
+
+                <div class="col-md-2 mb-3 me-0">
+                    <img src="assets/OneDrive_1_2023-03-21/AutoShow_Logo_White.png" class="img-fluid img" alt="Autoshow">
+
+                </div>
+            </div>
+            </div>
+        </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
